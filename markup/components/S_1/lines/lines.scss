@@ -1,0 +1,44 @@
+.lines {
+    width: 280px;
+    display: none;
+    margin: 40px auto;
+
+    svg {
+
+        height: 280px;
+        width: 280px;
+    }
+
+    path {
+        fill: none;
+        stroke: #802DDC;
+        stroke-width: 1px;
+        vector-effect: non-scaling-stroke;
+    }
+
+    @include respond-from(md) {
+        width: 340px;
+        min-height: 100%;
+        margin: 0 0 0 40px ;
+
+
+        svg {
+            width: 340px;
+            height: 340px;
+        }
+    }
+
+    @include respond-from(xlg) {
+        display: flex;
+        width: 700px;
+        min-height: 100%;
+        margin: 0 0 0 40px ;
+
+
+
+        svg {
+            width: 700px;
+            height: 700px;
+        }
+    }
+}

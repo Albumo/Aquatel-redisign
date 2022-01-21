@@ -1,0 +1,12 @@
+.footer {
+    background: $footer-bg;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+        flex-flow: row wrap;
+    }
+
+
+}

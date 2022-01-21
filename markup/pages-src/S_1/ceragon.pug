@@ -1,0 +1,48 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+    .header.js-header
+        .header__wrapper.js-header-toggle.w-center
+            .header__logo
+                img(src="static/img/content/logo.svg" alt="logo")
+            .header__burger-menu-wrap.js-header-burger
+                .header__burger-letter M
+                .header__burger-menu
+                    span
+                    span
+                    span
+                .header__burger-letter N
+                .header__burger-letter U
+            nav.header__nav
+                .header__nav-wrap
+                    .header__navi
+                        ul.header__list
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/") Home
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#about") About Us
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#vendors") Vendors
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#contacts") Contacts
+    .w-inner
+        .w-center
+            .w-gap-lg
+                h1.banner__image-text-title.colored Ceragon
+
+            .w-gap-lg
+            .w-gap-lg
+                .txt-wrap
+                    .img-left-text
+                        .img-left-text__img
+                            img(src="static/img/content/321.png" alt="")
+                        .img-left-text__wrapper
+                            .img-left-text__text-wrap
+                                .img-left-text__text
+                                    p Ceragon Networks Ltd. is the global innovator and leading solutions provider of 5G wireless transport. Ceragon Networks Ltd. help operators and other service providers worldwide increase operational efficiency and enhance end customers’ quality of experience with innovative wireless backhaul and fronthaul solutions.
+                                    p Ceragon’s unique multicore technology and disaggregated approach to wireless transport provides highly reliable, fast to deploy, high-capacity wireless transport for 5G and 4G networks with minimal use of spectrum, power, real estate, and labor resources. It enables increased productivity, as well as simple and quick network modernization, positioning Ceragon as a leading solutions provider for the 5G era. Ceragon delivers a complete portfolio of turnkey end-to-end AI-based managed and professional services that ensure efficient network rollout and optimization to achieve the highest value for our customers. Ceragon solutions are deployed by more than 400 service providers, as well as more than 800 private networks, in more than 140 countries.
+                                    a.site(href="https://www.ceragon.com/" target="_blank") www.ceragon.com
+
+            .w-gap-lg
+    +footer

@@ -1,0 +1,22 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+
+    .w-inner
+        +header
+
+        .w-center.container
+            #main
+            +banner
+            #about-us
+            +about
+            .w-gap-lg
+                #vendors
+                +grid
+        .w-gap-lg
+            #contacts
+            +contacts
+
+        .msg-wrap
+            .msg(onclick="gsapMsg.reverse()")

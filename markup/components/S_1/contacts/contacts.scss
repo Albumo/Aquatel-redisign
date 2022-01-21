@@ -1,0 +1,122 @@
+.contacts {
+    position: relative;
+    padding: 0 0 50px 0;
+
+    &__title {
+        font-size: 38px;
+        color: #802DDC;
+        margin: 40px auto;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    &__first {
+        display: none;
+    }
+
+    &__sides {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    &__left-title {
+        color: #802DDC;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        @extend %ul-reset;
+
+        li {
+            display: flex;
+            margin-bottom: 10px;
+            font-size: 18px;
+
+            img {
+                width: 32px;
+                height: 32px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__right {
+        margin-top: 30px;
+    }
+
+    @include respond-from(sm) {
+        &__sides {
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__right {
+            margin-top: 20px;
+        }
+
+
+
+    }
+
+    @include respond-from(md) {
+
+        &__wrap {
+            margin-top: 100px;
+        }
+
+        &__title {
+            font-size: 90px;
+            text-align: left;
+        }
+
+        &__sides {
+
+        }
+
+    }
+
+    @include respond-from(lg) {
+        &__first {
+            display: block;
+            width: 694px;
+
+            img {
+                position: absolute;
+                left: 0;
+                width: 694px;
+            }
+        }
+
+    }
+    @include respond-from(xlg) {
+
+        background-image: url("../img/content/contacts.svg");
+        background-size: 694px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+
+
+
+        &__title {
+            font-size: 144px;
+            margin-bottom: 70px;
+        }
+
+        &__left {
+            width: 40%;
+        }
+
+        &__sides {
+            display: flex;
+            align-items: unset;
+            margin: 0;
+            justify-content: flex-end;
+            padding: 0;
+            min-width: 100%;
+        }
+    }
+}

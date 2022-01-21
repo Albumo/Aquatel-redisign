@@ -1,0 +1,36 @@
+.sphere {
+
+
+    canvas {
+        width: 290px;
+        height: 290px;
+        position: relative;
+        z-index: -1;
+
+        @include respond-from(md) {
+            width: 420px;
+            height: 420px;
+
+        }
+
+        @include respond-from(lg) {
+            width: 660px;
+            height: 660px;
+
+        }
+    }
+
+
+}
+
+// dribbble - twitter
+.dribbble {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+    img {
+        display: block;
+        height: 28px;
+    }
+}

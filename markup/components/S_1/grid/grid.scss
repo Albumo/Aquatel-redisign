@@ -1,0 +1,104 @@
+.grid {
+    &__list {
+        @extend %ul-reset;
+        display: flex;
+        gap: 1rem;
+        flex-flow: row wrap;
+    }
+
+    &__title {
+        font-size: 38px;
+        color: #239988;
+        margin: 40px auto;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    &__list-text {
+        position: absolute;
+        right: 0;
+        display: none;
+        left: 0;
+        padding: 10px;
+        color: #161616;
+        background: #fff;
+        transition: all .35s ease-in-out;
+    }
+
+    a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 200px;
+        padding: 20px;
+        background: #239988;
+        box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.15);
+        font-size: 1.2rem;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        transition: all .35s ease-in-out;
+
+        img {
+            max-width: 342px;
+            width: 100%;
+            
+        }
+
+
+        &:hover {
+            background: rgba(35, 153, 136, 0.95);
+
+            img {
+                filter: blur(4px);
+
+            }
+
+            .grid__list-text {
+                display: block;
+                bottom: 0;
+            }
+
+        }
+    }
+
+    @include respond-from(sm) {
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        a {
+            height: 235px;
+            padding: 0;
+            width: auto;
+        }
+    }
+
+    @include respond-from(md) {
+        &__title {
+            font-size: 90px;
+            text-align: left;
+        }
+
+        &__list {
+            gap: 35px;
+        }
+    }
+
+    @include respond-from(lg) {
+        &__list {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 58px
+        }
+
+        &__title {
+            font-size: 144px;
+            margin-bottom: 70px;
+        }
+    }
+
+}

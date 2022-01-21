@@ -1,0 +1,12 @@
+.dots {
+    $dotsize: 1%;
+    $dim: 7;
+    $size: 500px;
+    $persp: 500px;
+
+    @function col($x, $y, $z) {
+        @return white;
+    }
+
+
+}

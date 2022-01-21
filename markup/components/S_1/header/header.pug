@@ -1,0 +1,25 @@
+mixin header()
+    header.header.js-header
+        .header__wrapper.js-header-toggle.w-center
+            .header__logo
+                img(src="static/img/content/logo.svg" alt="logo")
+            .header__burger-menu-wrap.js-header-burger
+                .header__burger-letter M
+                .header__burger-menu
+                    span
+                    span
+                    span
+                .header__burger-letter N
+                .header__burger-letter U
+            nav.header__nav
+                .header__nav-wrap
+                    .header__navi
+                        ul.header__list.header__menu-inner
+                            li.header__list-item.header__menu-item
+                                a.header__menu-link.active.header__list-link.js-to-item(href="#main") Home
+                            li.header__list-item.header__menu-item
+                                a.header__menu-link.header__list-link.js-to-item(href="#about-us") About Us
+                            li.header__list-item.header__menu-item
+                                a.header__menu-link.header__list-link.js-to-item(href="#vendors") Vendors
+                            li.header__list-item.header__menu-item
+                                a.header__menu-link.header__list-link.js-to-item(href="#contacts") Contacts

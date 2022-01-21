@@ -1,0 +1,46 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+    .header.js-header
+        .header__wrapper.js-header-toggle.w-center
+            .header__logo
+                img(src="static/img/content/logo.svg" alt="logo")
+            .header__burger-menu-wrap.js-header-burger
+                .header__burger-letter M
+                .header__burger-menu
+                    span
+                    span
+                    span
+                .header__burger-letter N
+                .header__burger-letter U
+            nav.header__nav
+                .header__nav-wrap
+                    .header__navi
+                        ul.header__list
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/") Home
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#about") About Us
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#vendors") Vendors
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#contacts") Contacts
+    .w-inner
+        .w-center
+            .w-gap-lg
+                h1.banner__image-text-title.colored AudioCodes
+            .w-gap-lg
+                .txt-wrap
+                    .img-left-text
+                        .img-left-text__img
+                            img(src="static/img/content/321.png" alt="")
+                        .img-left-text__wrapper
+                            .img-left-text__text-wrap
+                                .img-left-text__text
+                                    p AudioCodes is a leading provider of advanced communications software, products and productivity solutions for the digital workplace. AudioCodes enables enterprises and service providers to build and operate all-IP voice networks for delivering unified communications, contact centers, and hosted business services, whether in the cloud or on premises.
+                                    p AudioCodes innovative products, solutions and services are used by large multinational enterprises and leading tier one operators worldwide. Our underlying high-definition voice technology and products provide enhanced quality and an improved end user communication experience.
+                                    a.site(href="https://www.audiocodes.com/" target="_blank") www.audiocodes.com
+
+            .w-gap-lg
+    +footer

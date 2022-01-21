@@ -1,0 +1,32 @@
+.sphere-new {
+    width: 280px;
+    margin: 40px auto;
+    canvas {
+        width: 280px;
+        height: 280px;
+    }
+
+    @include respond-from(md) {
+        width: 330px;
+        margin-right: 40px;
+
+        canvas {
+            width: 330px;
+            height: 330px;
+        }
+    }
+
+    @include respond-from(lg) {
+        width: 520px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        canvas {
+            margin-top: 180px;
+            width: 520px;
+            height: 520px;
+        }
+    }
+}

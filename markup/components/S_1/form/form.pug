@@ -1,0 +1,18 @@
+mixin form()
+
+    .form
+        .form__wrap
+
+            form.form__form(enctype="multipart/form-data" action="" method="post" id="form" onsubmit="send(event, 'send.php')")
+                .form__group
+                    input.form__control(type="text" name="name" id="name" placeholder="Name" required)
+                .form__group
+                    input.form__control(type="text" name="phone" id="phone" placeholder="Phone")
+                .form__group
+                    input.form__control(type="text" name="email" id="email" placeholder="Email" required)
+                .form__group
+                    textarea.form__control(type="text" name="message" id="message" placeholder="Message")
+                .g-recaptcha(data-sitekey="6LenNCUeAAAAAKjX0gs4TCSN6V54UZUom_GzNmMB")
+                br
+                .form__group
+                    button.form__btn.btn(type="submit") Send

@@ -1,0 +1,48 @@
+extends _page-template
+
+block content
+    | <!-- skin 1 -->
+    .header.js-header
+        .header__wrapper.js-header-toggle.w-center
+            .header__logo
+                img(src="static/img/content/logo.svg" alt="logo")
+            .header__burger-menu-wrap.js-header-burger
+                .header__burger-letter M
+                .header__burger-menu
+                    span
+                    span
+                    span
+                .header__burger-letter N
+                .header__burger-letter U
+            nav.header__nav
+                .header__nav-wrap
+                    .header__navi
+                        ul.header__list
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/") Home
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#about") About Us
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#vendors") Vendors
+                            li.header__list-item
+                                a.header__list-link.js-to-item(href="/#contacts") Contacts
+    .w-inner
+        .w-center
+            .w-gap-lg
+                h1.banner__image-text-title.colored Avaya
+            .w-gap-lg
+                p Avaya is a world leader in solutions and services for building corporate communications networks. Avaya's innovative solutions in the field of communications and CRM technologies facilitate interaction between government agencies and citizens, increasing the efficiency of the economy in various sectors, and creating a technological basis for the further development of e-commerce.
+                .w-gap-lg
+                    .txt-wrap
+                        .img-left-text
+                            .img-left-text__img
+                                img(src="static/img/content/321.png" alt="")
+                            .img-left-text__wrapper
+                                .img-left-text__text-wrap
+                                    .img-left-text__text Among the company's offers in the Easetrn European countries markets, excellently proven equipment, fundamental bulding blocks and full scale solutions for multi-service enterprise-wide networks, call centers and CRM.
+
+                .w-gap-lg
+                    p Avaya offers solutions for enterprises of all sizes, for various industries, and implements communication projects of any size. The company's clients in Easern Europe are the largest commercial and financial structures, industrial enterprises, multinational corporations, transport and telecommunications companies, as well as hotels and business centers.
+                    a.site(href="https://www.avaya.com/en/" target="_blank") www.avaya.com
+            .w-gap-lg
+    +footer

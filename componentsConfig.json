@@ -1,0 +1,56 @@
+{
+  "component_header": {
+    "number": "S_1",
+    "name": "header"
+  },
+
+  "component_footer": {
+    "number": "S_1",
+    "name": "footer"
+  },
+
+  "component_sphere": {
+    "number": "S_1",
+    "name": "sphere"
+  },
+
+  "component_sphere-new": {
+    "number": "S_1",
+    "name": "sphere-new"
+  },
+
+  "component_contacts": {
+    "number": "S_1",
+    "name": "contacts"
+  },
+
+  "component_dots": {
+    "number": "S_1",
+    "name": "dots"
+  },
+
+  "component_banner": {
+    "number": "S_1",
+    "name": "banner"
+  },
+
+  "component_about": {
+    "number": "S_1",
+    "name": "about"
+  },
+
+  "component_lines": {
+    "number": "S_1",
+    "name": "lines"
+  },
+
+  "component_form": {
+    "number": "S_1",
+    "name": "form"
+  },
+
+  "component_grid": {
+    "number": "S_1",
+    "name": "grid"
+  }
+}

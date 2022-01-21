@@ -1,0 +1,26 @@
+include ../components/common/head
+include ../components/common/include-js
+include ../components/common/img-svg
+
+include ../components/%=component_header=%/header/header
+include ../components/%=component_banner=%/banner/banner
+include ../components/%=component_sphere=%/sphere/sphere
+include ../components/%=component_sphere-new=%/sphere-new/sphere-new
+include ../components/%=component_contacts=%/contacts/contacts
+include ../components/%=component_dots=%/dots/dots
+include ../components/%=component_about=%/about/about
+include ../components/%=component_lines=%/lines/lines
+include ../components/%=component_form=%/form/form
+include ../components/%=component_grid=%/grid/grid
+include ../components/%=component_footer=%/footer/footer
+
+doctype html
+html(class="no-js" lang="en")
+    head
+        +head
+    body
+        block content
+
+        +include-js
+
+        block scripts

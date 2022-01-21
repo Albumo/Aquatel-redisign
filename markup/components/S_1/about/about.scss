@@ -1,0 +1,70 @@
+.about {
+    &__title {
+        font-size: 38px;
+        color: #FFD449;
+        margin: 40px auto;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    &__title-nth {
+        display: none;
+    }
+
+    &__sides {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    @include respond-from(md) {
+        &__wrap {
+            padding: 50px 0;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__title-nth {
+            display: block;
+        }
+
+        &__sides {
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__left {
+        }
+
+        &__right {
+        }
+
+        &__title {
+            font-size: 90px;
+            text-align: left;
+        }
+    }
+
+    @include respond-from(lg) {
+        &__sides {
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+
+        }
+
+        &__title {
+            font-size: 144px;
+            margin: 0 0 70px 0;
+        }
+
+        &__right {
+            max-width: 950px;
+        }
+
+
+    }
+}
