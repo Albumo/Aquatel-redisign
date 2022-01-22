@@ -194,8 +194,8 @@ img {
 
 .w-list {
     display: flex;
-    flex-flow: row wrap;
     gap: 1rem;
+    flex-flow: row wrap;
 
     ul li {
         margin-bottom: 5px;
@@ -311,6 +311,7 @@ img {
     }
 
     &__comment {
+        font-size: 18px;
         font-style: italic;
     }
 
@@ -327,7 +328,7 @@ img {
         }
 
         &__author {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         &__sides {
