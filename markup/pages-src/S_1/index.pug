@@ -7,16 +7,16 @@ block content
         +header
 
         .w-center.container
-            #main
-            +banner
-            #about-us
-            +about
+            section#main
+                +banner
+            section#about-us
+                +about
             .w-gap-lg
-                #vendors
-                +grid
+                section#vendors
+                    +grid
         .w-gap-lg
-            #contacts
-            +contacts
+            section#contacts
+                +contacts
 
         .msg-wrap
             .msg(onclick="gsapMsg.reverse()")

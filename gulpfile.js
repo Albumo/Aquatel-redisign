@@ -634,7 +634,6 @@ gulp.task('build-back-end', [
     'clean', 'clean-dev', 'sass-build', 'images-general-build', 'images-content-build', 'images-svgSprite-build', 'js-build-custom', 'js-build', 'fonts-build'
 ]);
 
-
 gulp.task('build-all', gulpsync.async([
-    ['clean-dev', 'clean', 'pug-lint', 'sass-lint', 'es-lint', 'build-all-enum']
+    ['clean-dev', 'clean', 'pug-lint', 'sass-lint', 'build-all-enum']
 ]));

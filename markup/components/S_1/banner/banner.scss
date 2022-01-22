@@ -1,13 +1,12 @@
 .banner {
     height: 100vh;
-    &__wrap {
-    }
 
     &__title {
+        margin: 40px auto;
         font-size: 38px;
         color: #2280FC;
-        margin: 40px auto;
         text-align: center;
+        opacity: 0;
     }
 
     &__sides {
@@ -17,17 +16,24 @@
         height: 100%;
     }
 
+    &.is-animated {
+        .banner__title {
+            animation: fadeIn .25s linear both;
+        }
+
+    }
+
     @include respond-from(md) {
         &__wrap {
-            height: 100%;
             display: flex;
             align-items: center;
+            height: 100%;
         }
 
         &__sides {
-            align-items: center;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
         }
 
         &__title {

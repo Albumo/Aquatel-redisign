@@ -27,6 +27,10 @@
         display: flex;
         align-items: center;
         min-height: 100%;
+
+        a {
+            height: 100%;
+        }
     }
 
     &__nav {
@@ -50,7 +54,7 @@
 
     &__burger-menu-wrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         width: 110px;
         height: auto;
@@ -65,13 +69,22 @@
             position: relative;
             display: block;
             width: 100%;
-            height: 4px;
+            height: 2px;
             margin-bottom: 4px;
-            background: $header-color;
+            border-radius: 5px;
             transition: .3s ease;
+
+            &:first-child {
+                background: #2280FC;
+            }
+
+            &:nth-child(2) {
+                background: #239988;
+            }
 
             &:last-child {
                 margin-bottom: 0;
+                background: #802DDC;
             }
         }
     }
@@ -172,6 +185,38 @@
     }
 }
 
+.is-scroll {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all .35s ease-in-out;
+}
+
 .active {
     color: #2280FC;
+}
+
+.header__about-link.active {
+    color: #FFD449;
+}
+
+.header__about-link:hover {
+    color: #FFD449;
+}
+
+.header__vendors-link.active {
+    color: #239988;
+}
+
+.header__vendors-link:hover {
+    color: #239988;
+}
+
+.header__contacts-link.active {
+    color: #802DDC;
+}
+
+.header__contacts-link:hover {
+    color: #802DDC;
 }

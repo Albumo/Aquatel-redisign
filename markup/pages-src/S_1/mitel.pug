@@ -5,15 +5,13 @@ block content
     .header.js-header
         .header__wrapper.js-header-toggle.w-center
             .header__logo
-                img(src="static/img/content/logo.svg" alt="logo")
+                a(href="/")
+                    img(src="static/img/content/logo.svg" alt="logo")
             .header__burger-menu-wrap.js-header-burger
-                .header__burger-letter M
                 .header__burger-menu
                     span
                     span
                     span
-                .header__burger-letter N
-                .header__burger-letter U
             nav.header__nav
                 .header__nav-wrap
                     .header__navi
@@ -27,39 +25,31 @@ block content
                             li.header__list-item
                                 a.header__list-link.js-to-item(href="/#contacts") Contacts
     .w-inner
-        .w-center
-            .w-gap-lg
-                h1.banner__image-text-title.colored Mitel
-
-            .w-gap-lg
-                p When it comes to corporate telephony, unified communications and collaboration (UCC), Mitel is an industry-recognized leader.
-            .w-gap-lg
-                .txt-wrap
-                    .img-left-text
-                        .img-left-text__img
-                            img(src="static/img/content/321.png" alt="")
-                        .img-left-text__wrapper
-                            .img-left-text__text-wrap
-                                h3 Seamless Communications and Collaboration
-                                .img-left-text__text With 45 years of industry leadership, we help businesses connect, collaborate and provide better experiences for their customers. Mitel is trusted by 70 million business users in more than 100 countries.
-            .w-gap-lg
+        .page.js-animate
+            .w-center
+                h1.page__title Mitel
+                p.page__text When it comes to corporate telephony, unified communications and collaboration (UCC), Mitel is an industry-recognized leader.
+                h3 Seamless Communications and Collaboration
+                p.page__text With 45 years of industry leadership, we help businesses connect, collaborate and provide better experiences for their customers. <span class="colored">Mitel</span> is trusted by 70 million business users in more than 100 countries.
                 h3 What Makes Mitel Different?
-                p Throughout our long history of industry experience, innovation has been core to Mitel’s DNA – allowing us to become experts in evolving to meet your needs and help you do the same for your customers. It’s why we’re the only company that wakes up every day exclusively focused on helping you take your communications from where they are today to where you – and your customers – need and expect them to be.
-                .w-list
-                    ul
-                        li 4.7 million cloud users worldwide
-                        li #1 market leader in total cloud seats worldwide
-                        li #1 in private cloud worldwide
-                        li #1 in UC market share for Europe
+                p.page__text Throughout our long history of industry experience, innovation has been core to Mitel’s DNA – allowing us to become experts in evolving to meet your needs and help you do the same for your customers. It’s why we’re the only company that wakes up every day exclusively focused on helping you take your communications from where they are today to where you – and your customers – need and expect them to be.
+                .page__sides
+                    .page__left
+                        +lines
+                    .page__right
+                        ul.page__list
+                            li 4.7 million cloud users worldwide
+                            li #1 market leader in total cloud seats worldwide
+                            li #1 in private cloud worldwide
+                            li #1 in UC market share for Europe
 
-                    ul
-                        li Over $1.3B in revenue
-                        li 5 time Gartner Magic Quadrant Leader for UC
-                        li Frost & Sullivan 2017 Growth Excellence Leader in UC in North America
-                        li Over 1,600 patents & applications
+                        ul.page__list
+                            li Over $1.3B in revenue
+                            li 5 time Gartner Magic Quadrant Leader for UC
+                            li Frost & Sullivan 2017 Growth Excellence Leader in UC in North America
+                            li Over 1,600 patents & applications
 
-                p "As we have been saying for a number of years now, Mitel has a compelling value proposition in the Unified Communications industry by being able to offer multiple cloud migrations for its customers. This strategy has been successful as evidenced by Mitel’s continued leadership in the combined market of Private and Public Cloud for nearly a decade." Jeremy Duke, Founder and Chief Analyst , Synergy Research Group.
+                p.page__comment "As we have been saying for a number of years now, <span class="colored">Mitel</span> has a compelling value proposition in the Unified Communications industry by being able to offer multiple cloud migrations for its customers. This strategy has been successful as evidenced by Mitel’s continued leadership in the combined market of Private and Public Cloud for nearly a decade."
+                p.page__author Jeremy Duke, Founder and Chief Analyst , Synergy Research Group.
 
-                a.site(href="https://www.mitel.com" target="_blank") www.mitel.com
-            .w-gap-lg
-    +footer
+                a.page__link(href="https://www.mitel.com" target="_blank") www.mitel.com

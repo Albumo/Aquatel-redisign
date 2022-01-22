@@ -2,30 +2,69 @@
     &__list {
         @extend %ul-reset;
         display: flex;
-        gap: 1rem;
         flex-flow: row wrap;
+        gap: 1rem;
+
+        a {
+            opacity: 0;
+        }
     }
 
     &__title {
-        font-size: 38px;
-        color: #239988;
         margin: 40px auto;
-        text-align: center;
+        font-size: 38px;
         line-height: 1.1;
+        color: #239988;
+        text-align: center;
+        opacity: 0;
+    }
+
+
+    &.is-animated {
+        .grid__title {
+            animation: fadeIn .35s linear both;
+        }
+
+        .grid__list a {
+            &:first-child {
+                animation: fadeIn .35s linear both;
+            }
+
+            &:nth-child(2) {
+                animation: fadeIn .45s linear both;
+            }
+
+            &:nth-child(3) {
+                animation: fadeIn .55s linear both;
+            }
+
+            &:nth-child(4) {
+                animation: fadeIn .65s linear both;
+            }
+
+            &:nth-child(5) {
+                animation: fadeIn .75s linear both;
+            }
+
+            &:nth-child(6) {
+                animation: fadeIn .85s linear both;
+            }
+        }
     }
 
     &__list-text {
         position: absolute;
         right: 0;
-        display: none;
+        bottom: -100px;
         left: 0;
         padding: 10px;
-        color: #161616;
         background: #fff;
+        color: #161616;
+        opacity: 0;
         transition: all .35s ease-in-out;
     }
 
-    a {
+    &__list-link {
         position: relative;
         display: flex;
         justify-content: center;
@@ -33,23 +72,23 @@
         width: 100%;
         min-height: 200px;
         padding: 20px;
+        overflow: hidden;
         background: #239988;
-        box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.15);
         font-size: 1.2rem;
         color: #fff;
         text-align: center;
         text-decoration: none;
-        transition: all .35s ease-in-out;
+        box-shadow: 5px 5px 35px rgba(0, 0, 0, .15);
 
         img {
-            max-width: 342px;
             width: 100%;
-            
+            max-width: 342px;
+            transition: all .35s ease-in-out;
+
         }
 
-
         &:hover {
-            background: rgba(35, 153, 136, 0.95);
+            background: rgba(35, 153, 136, .95);
 
             img {
                 filter: blur(4px);
@@ -57,24 +96,23 @@
             }
 
             .grid__list-text {
-                display: block;
                 bottom: 0;
+                opacity: 1;
             }
-
         }
     }
 
     @include respond-from(sm) {
         &__list {
             display: grid;
-            grid-template-columns: 1fr 1fr;
             gap: 30px;
+            grid-template-columns: 1fr 1fr;
         }
 
         a {
+            width: auto;
             height: 235px;
             padding: 0;
-            width: auto;
         }
     }
 
@@ -91,14 +129,13 @@
 
     @include respond-from(lg) {
         &__list {
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 58px
+            gap: 58px;
+            grid-template-columns: 1fr 1fr 1fr
         }
 
         &__title {
-            font-size: 144px;
             margin-bottom: 70px;
+            font-size: 144px;
         }
     }
-
 }

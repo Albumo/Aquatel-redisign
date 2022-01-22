@@ -1,10 +1,11 @@
 .form {
-    transition: right .65s ease-in-out;
     min-width: 280px;
+    transition: right .65s ease-in-out;
 
     @include respond-from(md) {
         min-width: 390px;
     }
+
     &__wrap {
         position: relative;
         display: flex;

@@ -3,12 +3,19 @@
     padding: 0 0 50px 0;
 
     &__title {
-        font-size: 38px;
-        color: #802DDC;
         margin: 40px auto;
-        text-align: center;
+        font-size: 38px;
         line-height: 1.1;
+        color: #802DDC;
+        text-align: center;
+        opacity: 0;
     }
+
+    &__text {
+        opacity: 0;
+    }
+
+
 
     &__first {
         display: none;
@@ -22,9 +29,9 @@
     }
 
     &__left-title {
-        color: #802DDC;
-        font-weight: 700;
         margin-bottom: 20px;
+        font-weight: 700;
+        color: #802DDC;
     }
 
     ul {
@@ -45,13 +52,36 @@
 
     &__right {
         margin-top: 30px;
+        opacity: 0;
+    }
+
+    &__left {
+        opacity: 0;
+    }
+
+    &.is-animated {
+        .contacts__title {
+            animation: fadeIn .35s linear both;
+        }
+
+        .contacts__text {
+            animation: fadeIn .45s linear both;
+        }
+
+        .contacts__left {
+            animation: fadeIn .5s linear both;
+        }
+
+        .contacts__right {
+            animation: fadeIn .65s linear both;
+        }
     }
 
     @include respond-from(sm) {
         &__sides {
-            align-items: flex-start;
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-start;
         }
 
         &__right {
@@ -95,15 +125,15 @@
     @include respond-from(xlg) {
 
         background-image: url("../img/content/contacts.svg");
-        background-size: 694px;
-        background-repeat: no-repeat;
         background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 694px;
 
 
 
         &__title {
-            font-size: 144px;
             margin-bottom: 70px;
+            font-size: 144px;
         }
 
         &__left {
@@ -112,11 +142,11 @@
 
         &__sides {
             display: flex;
-            align-items: unset;
-            margin: 0;
             justify-content: flex-end;
-            padding: 0;
+            align-items: unset;
             min-width: 100%;
+            margin: 0;
+            padding: 0;
         }
     }
 }
