@@ -228,11 +228,10 @@ img {
     left: calc(50% - 100px);
     width: 200px;
     height: 64px;
-    z-index: 99;
+    z-index: 9999;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     text-align: center;
-    opacity: 0;
 
     .msg {
         padding: 20px;
